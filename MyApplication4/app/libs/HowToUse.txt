@@ -1,0 +1,40 @@
+1，文件说明
+
+文件名                        说明                需求
+
+MobCommons.jar                Mob 通用公共库      必须
+MobTools.jar                  Mob 工具公共库      必须
+
+SMSSDK-<version>.aar          SMSSDK 核心         必须
+SMSSDKGUI-<version>.aar       SMSSDK GUI 开源库   可选
+
+如果你需要用GUI库，则需要加入全部这四个文件，不需要可以去掉SMSSDKGUI。为了方便和ShareSDK一起集成，公共库依然打包成jar。
+如果你同时使用ShareSDK,保留一份公共库就行（公共库版本一致或兼容）。
+
+2，如何使用
+
+将以上文件按需放入Android Studio项目所要使用SMSSDK的Module所在的Libs里面，再在Module的build.gradle里面将libs加入仓库（repositories），
+然后添加依赖（dependencies ）示例如下：
+
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    ....//你的其他依赖
+    compile name:'SMSSDK-<version>',ext:'aar'
+    compile name:'SMSSDKGUI-<version>',ext:'aar'
+}
+
+3, 混淆配置
+
+如果你开启了proguard混淆，需要在proguard的rules里面添加以下：
+
+# SMSSDK
+-dontwarn com.mob.**
+-keep class com.mob.**{*;}
+
+-dontwarn cn.smssdk.**
+-keep class cn.smssdk.**{*;}

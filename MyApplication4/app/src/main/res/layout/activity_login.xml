@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fiveaddone.myapplication.LoginActivity"
+    android:weightSum="1"
+    android:background="#ecedf1"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"
+        android:id="@+id/include"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/bcircle_border_change_example"
+        android:layout_width="@dimen/default_circle_size"
+        android:layout_height="@dimen/default_circle_size"
+        android:src="@drawable/flower"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/zhanghao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="手机号"
+        android:gravity="center"
+        android:maxLength="11"
+        android:phoneNumber="true"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        app:roundedCorners="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/bcircle_border_change_example"
+        android:layout_alignRight="@+id/denglu"
+        android:layout_alignEnd="@+id/denglu"
+        android:layout_alignLeft="@+id/denglu"
+        android:layout_alignStart="@+id/denglu" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/mima"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:hint="密码"
+        android:gravity="center"
+        android:password="true"
+        android:textColorHint="#bbbbbc"
+        app:roundedCorners="true"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/zhanghao"
+        android:layout_alignLeft="@+id/zhanghao"
+        android:layout_alignStart="@+id/zhanghao"
+        android:layout_alignRight="@+id/zhanghao"
+        android:layout_alignEnd="@+id/zhanghao" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:text="登录"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        app:bootstrapBrand="primary"
+        android:id="@+id/denglu"
+        android:layout_below="@+id/mima"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:id="@+id/wangjimima"
+        android:textColor="#2a8bde"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/denglu"
+        android:layout_alignLeft="@+id/denglu"
+        android:layout_alignStart="@+id/denglu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新用户注册"
+        android:textColor="#2a8bde"
+        android:id="@+id/xingyonghuzhuce"
+        android:layout_alignTop="@+id/wangjimima"
+        android:layout_alignRight="@+id/denglu"
+        android:layout_alignEnd="@+id/denglu" />
+
+
+
+</RelativeLayout>

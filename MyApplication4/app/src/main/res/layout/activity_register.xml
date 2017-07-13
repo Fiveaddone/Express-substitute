@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ecedf1"
+    tools:context="com.example.fiveaddone.myapplication.RegisterActivity">
+    <include layout="@layout/title"
+        android:id="@+id/include2" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入手机号码"
+        android:gravity="center|left"
+        android:maxLength="11"
+        android:phoneNumber="true"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/include2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:hint="输入验证码"
+        android:gravity="center|left"
+        android:numeric="decimal"
+        android:maxLength="4"
+        android:textColorHint="#bbbbbc"
+        app:bootstrapBrand="danger"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/et_phone"
+        android:layout_toLeftOf="@+id/bt_getCode"
+        android:layout_toStartOf="@+id/bt_getCode" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/bt_getCode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="获取验证码"
+        app:bootstrapSize="lg"
+        app:bootstrapBrand="primary"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/et_code"
+        android:layout_alignTop="@+id/et_code" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/bt_verify"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:text="验证"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:bootstrapBrand="primary"
+        android:layout_below="@+id/et_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="手机验证"
+        android:textSize="15dp"
+        android:textColor="#2a8bde"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/et_phone" />
+
+</RelativeLayout>

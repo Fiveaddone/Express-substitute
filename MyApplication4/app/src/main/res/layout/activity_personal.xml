@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ecedf1">
+    <include layout="@layout/title"
+        android:id="@+id/include6" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:src="@drawable/city"
+        android:id="@+id/imageView4"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/include6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:id="@+id/personal_layout"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="#8A360F"
+        app:tabTextAppearance="@style/TabLayoutTextStyle">
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/personal_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/personal_layout" />
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/bcircle_border_change_example"
+        android:layout_width="@dimen/default_circle_size"
+        android:layout_height="@dimen/default_circle_size"
+        android:src="@drawable/flower"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/personal_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="个人界面"
+        android:textSize="15dp"
+        android:textColor="#2a8bde"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/include6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎，！"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:id="@+id/personal_name"
+        android:layout_alignBottom="@+id/bcircle_border_change_example"
+        android:layout_toRightOf="@+id/bcircle_border_change_example"
+        android:layout_toEndOf="@+id/bcircle_border_change_example"
+        android:layout_marginBottom="26dp" />
+
+</RelativeLayout>

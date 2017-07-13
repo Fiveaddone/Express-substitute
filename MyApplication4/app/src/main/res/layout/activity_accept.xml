@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ecedf1"
+    tools:context="com.example.fiveaddone.myapplication.AcceptActivity">
+    <include layout="@layout/title"
+        android:id="@+id/include5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="接收订单"
+        android:textSize="15dp"
+        android:textColor="#2a8bde"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/include5" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/card"
+        android:id="@+id/textView3"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/include5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/accept_ID"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/location"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/accept_ID"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aaa"
+        android:id="@+id/accept_didian"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/accept_ID"
+        android:layout_alignStart="@+id/accept_ID" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/time"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ssss"
+        android:id="@+id/accept_time"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/accept_data"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="liuyan"
+        android:id="@+id/accept_message"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/messge"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="16dp" />
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/bcircle_border_change_example"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/flower"
+        android:layout_above="@+id/accept_message"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:text="确认接单"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        app:bootstrapBrand="danger"
+        android:id="@+id/accept_next"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ecedf1"
+    tools:context="com.example.fiveaddone.myapplication.PersonalInformationActivity">
+    <include layout="@layout/title"
+        android:id="@+id/include2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="用户注册"
+        android:textSize="15dp"
+        android:textColor="#2a8bde"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/include2" />
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/bcircle_border_change_example"
+        android:layout_width="@dimen/default_circle_size"
+        android:layout_height="@dimen/default_circle_size"
+        android:src="@drawable/flower"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/revise"
+        android:src="@drawable/revise"
+        android:layout_below="@+id/bcircle_border_change_example"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/xingxi_phone"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/bcircle_border_change_example"
+        android:layout_centerHorizontal="true"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLength="32"
+        android:password="true"
+        android:background="#ffffff"
+        android:hint="请输入密码"
+        android:gravity="center"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/revise"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/re_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLength="32"
+        android:phoneNumber="true"
+        android:background="#ffffff"
+        android:hint="请重复密码"
+        android:gravity="center"
+        android:textColorHint="#bbbbbc"
+        android:password="true"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLength="32"
+        android:background="#ffffff"
+        android:hint="请输入昵称 "
+        android:gravity="center"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/re_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/real_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLength="32"
+        android:background="#ffffff"
+        android:hint="请输入真实姓名 "
+        android:gravity="center|right"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bcircle_border_change_example"
+        android:layout_alignEnd="@+id/bcircle_border_change_example" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/personalID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLength="32"
+        android:background="#ffffff"
+        android:hint="请输入身份证号 "
+        android:numeric="decimal"
+        android:gravity="center"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/real_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/schoolID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLength="32"
+        android:background="#ffffff"
+        android:hint="请输入校园卡号 "
+        android:numeric="decimal"
+        android:gravity="center|right"
+        android:textColorHint="#bbbbbc"
+        android:layout_gravity="center_vertical"
+        app:bootstrapBrand="danger"
+        android:layout_below="@+id/personalID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/s_xinbie"
+        android:layout_toLeftOf="@+id/s_xinbie" />
+    <com.beardedhen.androidbootstrap.BootstrapDropDown
+        android:id="@+id/s_xinbie"
+        app:dropdownResource="@array/xinbie"
+        app:bootstrapBrand="warning"
+        app:bootstrapText="请选择性别"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:bootstrapExpandDirection="down"
+        android:layout_above="@+id/personalID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/real_name"
+        android:layout_toRightOf="@+id/real_name" />
+    <com.beardedhen.androidbootstrap.BootstrapDropDown
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:bootstrapExpandDirection="down"
+        app:bootstrapText="请选择学校"
+        android:id="@+id/s_school"
+        app:dropdownResource="@array/school"
+        app:bootstrapBrand="warning"
+        android:layout_below="@+id/personalID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/real_name"
+        android:layout_toEndOf="@+id/real_name" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/bt_next"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        app:roundedCorners="true"
+        app:bootstrapBrand="primary"
+        app:bootstrapText="完成"
+        app:bootstrapSize="lg"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/schoolID"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="密码"
+            android:textSize="15dp"
+            android:textColor="#2a8bde"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="132dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="重复密码"
+            android:textSize="15dp"
+            android:textColor="#2a8bde"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="昵称"
+            android:textSize="15dp"
+            android:textColor="#2a8bde"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/accept_ID"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="真实姓名"
+            android:textSize="15dp"
+            android:textColor="#2a8bde"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/accept_ID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="身份证号"
+            android:textSize="15dp"
+            android:textColor="#2a8bde"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="校园卡号"
+            android:textSize="15dp"
+            android:textColor="#2a8bde"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

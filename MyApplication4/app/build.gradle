@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.fiveaddone.myapplication"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        repositories {
+            flatDir {
+                dirs 'libs' //就是你放aar的目录地址
+            }
+            maven {
+                url "https://jitpack.io"
+            }
+        }
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/memu'] } }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile name: 'SMSSDK-2.1.4', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.4', ext: 'aar'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
+    compile 'com.beardedhen:androidbootstrap:2.3.1'
+    compile 'com.github.JayFang1993:DropDownMenu:v0.9'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    compile 'com.github.lubeast:PullToRefresh:1.0.2'
+    compile 'com.google.android.gms:play-services-ads:7.8.0'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
+}
