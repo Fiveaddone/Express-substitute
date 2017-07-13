@@ -3,15 +3,15 @@
 ## 进入APP界面：
 ![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/1.png)
 ## 1.用户注册界面：
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/2.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/3.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/4.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/5.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/6.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/2.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/3.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/4.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/5.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/6.png)
 ## 2.主界面：用户抢单界面
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/7.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/8.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/7.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/8.png)
 ## 3.用户订单提交与管理界面
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/9.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/10.png)
-![github](https://github.com/Fiveaddone/Express-substitute/tree/master/screenshots/11.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/9.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/10.png)
+![github](https://github.com/Fiveaddone/Express-substitute/blob/master/screenshots/11.png)
